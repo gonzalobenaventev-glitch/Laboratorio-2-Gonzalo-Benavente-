@@ -14,3 +14,14 @@ Tue Mar 24 01:30:07 PM UTC 2026:
  tests:  0|6
 total_score: 0/60
 d6e979f
+Thu Mar 26 06:56:33 PM UTC 2026: 
+ list.c | 45 +++++++++++++++++++++++++++++++--------------
+ 1 file changed, 31 insertions(+), 14 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:37:11: error: unused variable ‘list’ [-Werror=unused-variable]
+   37 |     List* list = (List*) malloc (sizeof(List));
+      |           ^~~~
+cc1: all warnings being treated as errors
+a7e4d22
