@@ -110,17 +110,17 @@ void * popCurrent(List * list)
 {
     Node* izq = list->current->prev;
     Node* der = list->current->next;
+    void* dato = list->current->data;
 
     if(izq != NULL && der != NULL)
     {
         izq->next = der;
         der->prev = izq;
-
-        List* dato = list->current->data;
+        
 
         list->current = der;
         return dato;
-
+        
     }
     
     else
@@ -129,6 +129,7 @@ void * popCurrent(List * list)
         {
             list->head = list->current->next;
             list->head->prev = NULL;
+            
         }
 
         else
@@ -137,7 +138,7 @@ void * popCurrent(List * list)
             list->tail->next = NULL;
         }
     }
-    return NULL;
+    return dato;
 }
 
 void cleanList(List * list) 
