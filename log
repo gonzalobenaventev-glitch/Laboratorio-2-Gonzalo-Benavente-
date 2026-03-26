@@ -289,3 +289,25 @@ list.c:140:6: error: ‘cleanList’ defined but not used [-Werror=unused-functi
       |      ^~~~~~~~~
 cc1: all warnings being treated as errors
 b2d7664
+Thu Mar 26 08:03:14 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+test.c: In function ‘popCurrent’:
+test.c:448:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:468:1: error: expected declaration or statement at end of input
+  468 | }
+      | ^
+test.c:469: error: control reaches end of non-void function [-Werror=return-type]
+test.c: At top level:
+test.c:448:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+In file included from test.c:5:
+list.c:140:6: error: ‘cleanList’ defined but not used [-Werror=unused-function]
+  140 | void cleanList(List * list)
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+c06cacd
