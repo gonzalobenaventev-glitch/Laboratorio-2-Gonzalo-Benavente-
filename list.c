@@ -128,13 +128,11 @@ void * popCurrent(List * list)
         izq->next = der;
         der->prev = izq;
 
-        free(list->current);
-
-        list->current = der;
-
-        return list->current->data;
     }
     
+    free(list->current);
+    list->current = der;
+    return list->current->data
 }
 
 void cleanList(List * list) 
