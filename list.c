@@ -34,10 +34,10 @@ Node * createNode(void * data)
 
 List * createList() 
 {
-    //List* list = (List*) malloc (sizeof(List));
+    List* list = (List*) malloc (sizeof(List));
 
     
-     return NULL;
+     return list;
 }
 
 // 2. Programe las funciones void * firstList(List * list) y void * nextList(List * list).
@@ -85,6 +85,7 @@ void pushBack(List * list, void * data)
 
 void pushCurrent(List * list, void * data) 
 {
+    
 }
 
 void * popFront(List * list) 
@@ -104,7 +105,15 @@ void * popBack(List * list)
 
 void * popCurrent(List * list) 
 {
+    Node* izq = list->current->prev;
+    Node* der = list->current->next;
+
+    izq->next = der;
+    der->prev = izq;
+
+    free(list->current);
     return NULL;
+    return list->current->data;
 }
 
 void cleanList(List * list) 
