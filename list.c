@@ -125,14 +125,14 @@ void * popCurrent(List * list)
                 list->current = list->current->prev;
             }*/
 
-        izq->next = der;
-        der->prev = izq;
+    izq->next = der;
+    der->prev = izq;
 
-        free(list->current);
+    free(list->current);
 
-        list->current = der;
+    list->current = der;
 
-        return list->current->data;
+    return list->current->data;
     //}
     
 }
