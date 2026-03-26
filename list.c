@@ -112,15 +112,16 @@ void * popCurrent(List * list)
     Node* der = list->current->next;
 
     if(izq != NULL && der != NULL)
-        {
+    {
         izq->next = der;
         der->prev = izq;
+
+        free(list->current);
             
         return list->current->data;
-        free(list->current);
 
         list->current = der;
-        }
+    }
     else
     {
         return NULL;
