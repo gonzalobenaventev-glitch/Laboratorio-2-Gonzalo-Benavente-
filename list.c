@@ -46,9 +46,7 @@ List * createList()
 
 void * firstList(List * list) 
 {
-    /*Node* primero = list->head->data;
     
-    return primero;*/
 }
 
 void * nextList(List * list) 
