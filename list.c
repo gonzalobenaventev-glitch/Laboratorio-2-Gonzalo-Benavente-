@@ -114,13 +114,13 @@ void * popCurrent(List * list)
     while(izq != NULL && der != NULL)
     {
 
-        if (izq == NULL)
+        if (list->current->prev == NULL)
             {
                 list->current = list->current->next;
 
             }
 
-        if (der == NULL)
+        if (list->current->next == NULL)
             {
                 list->current = list->current->prev;
             }
