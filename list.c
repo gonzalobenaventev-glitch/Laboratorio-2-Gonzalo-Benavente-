@@ -46,6 +46,7 @@ List * createList()
 
 void * firstList(List * list) 
 {
+    
     return NULL;
 }
 
@@ -110,15 +111,22 @@ void * popCurrent(List * list)
     Node* izq = list->current->prev;
     Node* der = list->current->next;
 
-    while(list->current->next != NULL)
+    while (izq != NULL && der != NULL)
         {
             izq->next = der;
             der->prev = izq;
-        }
 
-    free(list->current);
-    //return NULL;
-    return list->current->data;
+            if (izq == NULL || der == NULL)
+            {
+                return NULL;
+            }
+
+            return list->current->data;
+            free(list->current);
+
+            list->current = der;
+        }
+    
 }
 
 void cleanList(List * list) 
