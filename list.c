@@ -81,6 +81,7 @@ void pushFront(List * list, void * data)
 void pushBack(List * list, void * data) 
 {
     list->current = list->tail;
+    
     pushCurrent(list,data);
 }
 
@@ -115,8 +116,8 @@ void * popCurrent(List * list)
     der->prev = izq;
 
     free(list->current);
-    return NULL;
-    //return list->current->data;
+    //return NULL;
+    return list->current->data;
 }
 
 void cleanList(List * list) 
