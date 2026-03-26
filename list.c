@@ -111,7 +111,7 @@ void * popCurrent(List * list)
     Node* izq = list->current->prev;
     Node* der = list->current->next;
 
-    /*while(izq != NULL && der != NULL)
+    while(izq != NULL && der != NULL)
     {
 
         if (list->current->prev == NULL)
@@ -123,7 +123,7 @@ void * popCurrent(List * list)
         if (list->current->next == NULL)
             {
                 list->current = list->current->prev;
-            }*/
+            }
 
         izq->next = der;
         der->prev = izq;
@@ -133,7 +133,7 @@ void * popCurrent(List * list)
         list->current = der;
 
         return list->current->data;
-    //}
+    }
     
 }
 
