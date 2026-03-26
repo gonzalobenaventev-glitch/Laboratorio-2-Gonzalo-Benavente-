@@ -46,7 +46,9 @@ List * createList()
 
 void * firstList(List * list) 
 {
-    return NULL;
+    Node* primero = list->head;
+    
+    return primero;
 }
 
 void * nextList(List * list) 
@@ -73,6 +75,7 @@ void * prevList(List * list)
 
 void pushFront(List * list, void * data) 
 {
+    
 }
 
 void pushBack(List * list, void * data) 
