@@ -268,3 +268,24 @@ Thu Mar 26 08:00:37 PM UTC 2026:
  tests:  1|5
 total_score: 10/60
 188d6af
+Thu Mar 26 08:02:14 PM UTC 2026: 
+ list.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+Compilation failed
+test.c: In function ‘popCurrent’:
+test.c:448:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:468:1: error: expected declaration or statement at end of input
+  468 | }
+      | ^
+test.c: At top level:
+test.c:448:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+In file included from test.c:5:
+list.c:140:6: error: ‘cleanList’ defined but not used [-Werror=unused-function]
+  140 | void cleanList(List * list)
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+b2d7664
