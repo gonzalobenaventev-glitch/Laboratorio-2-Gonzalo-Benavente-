@@ -137,7 +137,7 @@ void * popCurrent(List * list)
             list->tail->next = NULL;
         }
 
-    //return NULL;
+    return NULL;
 }
 
 void cleanList(List * list) 
