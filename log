@@ -663,3 +663,18 @@ Fri Mar 27 07:39:51 PM UTC 2026:
  tests:  2|4
 total_score: 20/60
 c96e7b1
+Fri Mar 27 07:41:30 PM UTC 2026: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:49:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   49 |     Node* primero->data = list->head->data;
+      |                  ^~
+list.c:49:18: error: expected expression before ‘->’ token
+list.c:51:21: error: ‘primero’ undeclared (first use in this function)
+   51 |     list->current = primero;
+      |                     ^~~~~~~
+list.c:51:21: note: each undeclared identifier is reported only once for each function it appears in
+041f87c
