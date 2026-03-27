@@ -965,3 +965,14 @@ Fri Mar 27 08:25:24 PM UTC 2026:
  tests:  2|4
 total_score: 20/60
 95ac12d
+Fri Mar 27 08:25:49 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:76:11: error: unused variable ‘ultimo’ [-Werror=unused-variable]
+   76 |     Node* ultimo = list->tail;
+      |           ^~~~~~
+cc1: all warnings being treated as errors
+c7cef24

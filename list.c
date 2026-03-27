@@ -79,7 +79,7 @@ void * lastList(List * list)
 
     //dato = list->current->data;
 
-    return ultimo;
+    return list->current;
 }
 
 void * prevList(List * list) 
