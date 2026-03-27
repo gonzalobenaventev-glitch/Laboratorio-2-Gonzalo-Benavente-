@@ -632,3 +632,9 @@ list.c:51:10: error: assignment to ‘List *’ {aka ‘struct List *’} from i
    51 |     list = primero;
       |          ^
 9302a09
+Fri Mar 27 07:38:21 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|4
+total_score: 20/60
+4395fa6
