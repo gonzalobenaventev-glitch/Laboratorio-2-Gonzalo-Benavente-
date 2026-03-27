@@ -56,11 +56,11 @@ void * firstList(List * list)
 
 void * nextList(List * list) 
 {
-    Node* siguiente = list->current;
+    Node* siguiente = list->current->next;
 
     list->current = siguiente;
     
-    return NULL;
+    return list->current;
 }
 
 // 3. Programe las funciones void * lastList(List * list) y void * prevList(List * list).
