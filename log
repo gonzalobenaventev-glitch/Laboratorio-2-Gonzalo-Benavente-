@@ -678,3 +678,9 @@ list.c:51:21: error: ‘primero’ undeclared (first use in this function)
       |                     ^~~~~~~
 list.c:51:21: note: each undeclared identifier is reported only once for each function it appears in
 041f87c
+Fri Mar 27 07:41:52 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|4
+total_score: 20/60
+d9d43f6
