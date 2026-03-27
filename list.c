@@ -55,7 +55,7 @@ void * firstList(List * list)
 
 void * nextList(List * list) 
 {
-    void* siguiente = list->current->next;
+    void* siguiente = list->current;
 
     list->current = siguiente;
     
