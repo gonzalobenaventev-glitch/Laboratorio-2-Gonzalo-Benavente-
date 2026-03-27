@@ -49,7 +49,7 @@ void * firstList(List * list)
     void* primero = list->head->data;
 
 
-    (if primero == NULL)
+    if (primero == NULL)
         {
             list->head = list->head->next;
         }

@@ -467,3 +467,8 @@ list.c:49:11: error: unused variable ‘primero’ [-Werror=unused-variable]
       |           ^~~~~~~
 cc1: all warnings being treated as errors
 aac85d3
+Fri Mar 27 07:17:01 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+09844e2
