@@ -46,7 +46,9 @@ List * createList()
 
 void * firstList(List * list) 
 {   
-    return list->head;
+    list->current = list->head;
+    
+    return list->current;
 
 }
 
