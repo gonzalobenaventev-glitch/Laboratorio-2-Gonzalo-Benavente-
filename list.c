@@ -50,7 +50,7 @@ void * firstList(List * list)
 
     list->current = primero;
     
-    return list;
+    return list->data;
 
 }
 
