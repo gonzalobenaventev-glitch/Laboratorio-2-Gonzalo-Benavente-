@@ -46,7 +46,7 @@ List * createList()
 
 void * firstList(List * list) 
 {
-    void* primero = list->head->data;
+    Node* primero = list->head->data;
 
 
     if (primero == NULL)
