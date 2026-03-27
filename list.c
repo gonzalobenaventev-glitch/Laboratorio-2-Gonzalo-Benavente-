@@ -46,11 +46,13 @@ List * createList()
 
 void * firstList(List * list) 
 {
-    void* primero = list->head;
+    Node* primero = list->head;
 
     list->current = primero;
+
+    void* dato = list->current->data
     
-    return primero;
+    return dato;
 
 }
 
