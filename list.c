@@ -54,7 +54,7 @@ void * firstList(List * list)
         primero = list->head;
     }
 
-    list->current = primero;
+    list->current = primero->data;
     
     return list->current;
 
