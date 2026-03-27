@@ -48,12 +48,6 @@ void * firstList(List * list)
 {
     Node* primero = list->head;
 
-    if (list->head == NULL)
-    {
-        list->head = list->head->next;
-        primero = list->head;
-    }
-
     list->current = primero->data;
     
     return list->current;
