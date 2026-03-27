@@ -52,7 +52,7 @@ void * firstList(List * list)
 
     void* dato = primero->data;
     
-    return dato;
+    return NULL;
 
 }
 

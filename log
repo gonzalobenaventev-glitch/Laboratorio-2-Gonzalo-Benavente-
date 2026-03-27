@@ -750,3 +750,14 @@ Fri Mar 27 07:55:06 PM UTC 2026:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 e9f9781
+Fri Mar 27 07:55:31 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:53:11: error: unused variable ‘dato’ [-Werror=unused-variable]
+   53 |     void* dato = primero->data;
+      |           ^~~~
+cc1: all warnings being treated as errors
+9058d32
