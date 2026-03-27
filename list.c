@@ -75,7 +75,7 @@ void * lastList(List * list)
 {
     Node* ultimo = list->tail;
 
-    //list->current = ultimo;
+    list->current = ultimo;
 
     //dato = list->current->data;
 
