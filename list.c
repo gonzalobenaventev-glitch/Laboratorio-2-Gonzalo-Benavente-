@@ -46,13 +46,13 @@ List * createList()
 
 void * firstList(List * list) 
 {   
-    /*Node* primero = list->head;
+    Node* primero = list->head;
 
     list->current = primero;
 
-    //void* dato = primero->data;*/
+    //void* dato = primero->data;
 
-    return list->head->data;
+    return list->current;
 
 }
 
@@ -98,11 +98,17 @@ void * prevList(List * list)
 
 void pushFront(List * list, void * data) 
 {
-    
+    createNode(data);
+
+    list->current = list->head;
+
+    pushCurrent(list,data);
 }
 
 void pushBack(List * list, void * data) 
 {
+    createNode(data);
+    
     list->current = list->tail;
     
     pushCurrent(list,data);
