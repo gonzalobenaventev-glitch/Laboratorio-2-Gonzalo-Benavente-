@@ -48,7 +48,7 @@ void * firstList(List * list)
 {
     void* primero = list->head->data;
 
-    list->current = primero;
+    list->current = primero->data;
     
     return list->current;
 }

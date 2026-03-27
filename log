@@ -429,3 +429,15 @@ Fri Mar 27 07:12:39 PM UTC 2026:
  tests:  2|4
 total_score: 20/60
 9c5e059
+Fri Mar 27 07:13:35 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:51:28: error: dereferencing ‘void *’ pointer [-Werror]
+   51 |     list->current = primero->data;
+      |                            ^~
+list.c:51:28: error: request for member ‘data’ in something not a structure or union
+cc1: all warnings being treated as errors
+cf8557f
