@@ -50,7 +50,7 @@ void * firstList(List * list)
 
     list->current = primero;
     
-    return list->current->data;
+    return list;
 }
 
 void * nextList(List * list) 
@@ -59,7 +59,7 @@ void * nextList(List * list)
 
     list->current = siguiente;
     
-    return list->current->data;
+    return list;
 }
 
 // 3. Programe las funciones void * lastList(List * list) y void * prevList(List * list).
