@@ -47,11 +47,12 @@ List * createList()
 void * firstList(List * list) 
 {
     if (list->head == NULL)
-        {
-            list->head = list->head->next;
+    {
+        list->head = list->head->next;
 
-            list->head->prev = NULL;
-        }
+        list->head->prev = NULL;
+    }
+    
     Node* primero = list->head;
 
     list->current = primero;
