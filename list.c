@@ -51,6 +51,8 @@ void * firstList(List * list)
 
     list->current = primero;
 
+    return list->current;
+
 }
 
 void * nextList(List * list) 
