@@ -70,7 +70,8 @@ void * nextList(List * list)
     if (list->current != NULL)
     {
         void* dato = list->current->data;
-        
+
+        return dato;
     }
     else
     {
