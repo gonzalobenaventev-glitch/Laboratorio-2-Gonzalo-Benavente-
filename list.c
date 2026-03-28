@@ -143,7 +143,7 @@ void pushFront(List * list, void * data)
 
     list->head->prev = createNode(data);
 
-    pushCurrent(list,data);
+    
 }
 
 void pushBack(List * list, void * data) 
