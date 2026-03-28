@@ -65,7 +65,7 @@ void * nextList(List * list)
 {
     Node* siguiente = list->current->next;
 
-    list->current = siguiente";
+    list->current = siguiente;
     
     if (list->current != NULL)
     {
