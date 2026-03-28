@@ -141,9 +141,7 @@ void pushFront(List * list, void * data)
 {
     list->current = list->head;
 
-    Node* nuevo = createNode(data);
-
-    list->head->prev = nuevo;
+    list->head->prev = createNode(data);
 
     pushCurrent(list,data);
 }
