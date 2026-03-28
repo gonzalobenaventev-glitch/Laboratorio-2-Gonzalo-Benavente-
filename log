@@ -1020,3 +1020,17 @@ Sat Mar 28 06:37:04 PM UTC 2026:
  tests:  3|4
 total_score: 25/60
 d46c916
+Sat Mar 28 06:39:08 PM UTC 2026: 
+ list.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:72:15: error: unused variable ‘dato’ [-Werror=unused-variable]
+   72 |         void* dato = list->current->data;
+      |               ^~~~
+list.c:79:1: error: control reaches end of non-void function [-Werror=return-type]
+   79 | }
+      | ^
+cc1: all warnings being treated as errors
+e99420d
