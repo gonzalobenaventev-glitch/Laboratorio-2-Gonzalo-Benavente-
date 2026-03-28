@@ -1347,3 +1347,14 @@ list.c:22:8: note: declared here
    22 | Node * createNode(void * data)
       |        ^~~~~~~~~~
 88d7900
+Sat Mar 28 07:42:37 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:142:30: error: ‘nada’ undeclared (first use in this function)
+  142 |     Node* nuevo = createNode(nada);
+      |                              ^~~~
+list.c:142:30: note: each undeclared identifier is reported only once for each function it appears in
+6dd69be
