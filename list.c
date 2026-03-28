@@ -121,6 +121,14 @@ void pushBack(List * list, void * data)
 void pushCurrent(List * list, void * data) 
 {
     Node* nuevo = list->current->next;
+
+    Node* izq = nuevo->prev;
+
+    Node* der = nuevo->next;
+
+    void* dato = nuevo->data;
+
+    return nuevo->data;
 }
 
 void * popFront(List * list) 
