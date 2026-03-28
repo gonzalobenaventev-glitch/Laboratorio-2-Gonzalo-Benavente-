@@ -1265,3 +1265,9 @@ list.c:125:11: error: unused variable ‘izq’ [-Werror=unused-variable]
       |           ^~~
 cc1: all warnings being treated as errors
 797cf8e
+Sat Mar 28 07:11:27 PM UTC 2026: 
+ list.c | 13 ++++---------
+ 1 file changed, 4 insertions(+), 9 deletions(-)
+ tests:  4|4
+total_score: 25/60
+80546ab

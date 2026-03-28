@@ -63,8 +63,11 @@ void * firstList(List * list)
 
 void * nextList(List * list) 
 {
+    Node* siguiente = list->current->next;
+
+    list->current = siguiente;
     
-    return NULL;
+    return list->current;
 }
 
 // 3. Programe las funciones void * lastList(List * list) y void * prevList(List * list).
@@ -120,15 +123,7 @@ void pushBack(List * list, void * data)
 
 void pushCurrent(List * list, void * data) 
 {
-    Node* nuevo = list->current->next;
-
-    Node* izq = nuevo->prev;
-
-    Node* der = nuevo->next;
-
-    void* dato = nuevo->data;
-
-    return nuevo->data;
+    
 }
 
 void * popFront(List * list) 
