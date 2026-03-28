@@ -67,7 +67,16 @@ void * nextList(List * list)
 
     list->current = siguiente;
     
-    return list->current;
+    if (list->current != NULL)
+    {
+        void* dato = list->current->data;
+
+        return dato;
+    }
+    else
+    {
+        return NULL;
+    }
 }
 
 // 3. Programe las funciones void * lastList(List * list) y void * prevList(List * list).
