@@ -145,8 +145,6 @@ void pushFront(List * list, void * data)
 
     list->head->prev = nuevo;
 
-    list->size++;
-
     pushCurrent(list,data);
 }
 
