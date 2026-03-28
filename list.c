@@ -63,7 +63,7 @@ void * firstList(List * list)
 
 void * nextList(List * list) 
 {
-    Node* siguiente = list->current->next;
+    /*Node* siguiente = list->current->next;
 
     list->current = siguiente;
 
@@ -76,7 +76,7 @@ void * nextList(List * list)
     else
     {
         return NULL;
-    }
+    }*/
 }
 
 // 3. Programe las funciones void * lastList(List * list) y void * prevList(List * list).

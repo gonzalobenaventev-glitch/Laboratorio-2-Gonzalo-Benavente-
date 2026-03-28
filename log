@@ -1061,3 +1061,14 @@ Sat Mar 28 06:46:03 PM UTC 2026:
  1 file changed, 9 insertions(+), 2 deletions(-)
  tests:  0|0
 98bf0e1
+Sat Mar 28 06:47:27 PM UTC 2026: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:80:1: error: control reaches end of non-void function [-Werror=return-type]
+   80 | }
+      | ^
+cc1: all warnings being treated as errors
+02e02f7
