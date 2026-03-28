@@ -63,6 +63,7 @@ void * firstList(List * list)
 
 void * nextList(List * list) 
 {
+    
     return NULL;
 }
 
@@ -119,7 +120,7 @@ void pushBack(List * list, void * data)
 
 void pushCurrent(List * list, void * data) 
 {
-    
+    Node* nuevo = list->current->next;
 }
 
 void * popFront(List * list) 

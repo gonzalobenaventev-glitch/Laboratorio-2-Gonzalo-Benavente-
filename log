@@ -1231,3 +1231,14 @@ Sat Mar 28 07:01:28 PM UTC 2026:
  tests:  4|4
 total_score: 25/60
 6821ab2
+Sat Mar 28 07:05:02 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:123:11: error: unused variable ‘nuevo’ [-Werror=unused-variable]
+  123 |     Node* nuevo = list->current->next;
+      |           ^~~~~
+cc1: all warnings being treated as errors
+69b33fc
