@@ -1196,3 +1196,28 @@ Sat Mar 28 06:55:20 PM UTC 2026:
  tests:  4|4
 total_score: 25/60
 3c6f71d
+Sat Mar 28 06:56:57 PM UTC 2026: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:106:21: error: passing argument 1 of ‘pushCurrent’ from incompatible pointer type [-Wincompatible-pointer-types]
+  106 |     pushCurrent(list->current, data);
+      |                 ~~~~^~~~~~~~~
+      |                     |
+      |                     Node *
+In file included from list.c:4:
+list.h:20:25: note: expected ‘List *’ {aka ‘struct List *’} but argument is of type ‘Node *’
+   20 | void pushCurrent(List * list, void * data);
+      |                  ~~~~~~~^~~~
+list.c: In function ‘pushBack’:
+list.c:115:21: error: passing argument 1 of ‘pushCurrent’ from incompatible pointer type [-Wincompatible-pointer-types]
+  115 |     pushCurrent(list->current, data);
+      |                 ~~~~^~~~~~~~~
+      |                     |
+      |                     Node *
+list.h:20:25: note: expected ‘List *’ {aka ‘struct List *’} but argument is of type ‘Node *’
+   20 | void pushCurrent(List * list, void * data);
+      |                  ~~~~~~~^~~~
+888e623
