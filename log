@@ -1334,3 +1334,16 @@ Sat Mar 28 07:39:04 PM UTC 2026:
  tests:  10|2
 total_score: 40/60
 8630f13
+Sat Mar 28 07:42:15 PM UTC 2026: 
+ list.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:142:19: error: too few arguments to function ‘createNode’
+  142 |     Node* nuevo = createNode();
+      |                   ^~~~~~~~~~
+list.c:22:8: note: declared here
+   22 | Node * createNode(void * data)
+      |        ^~~~~~~~~~
+88d7900
