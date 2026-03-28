@@ -63,7 +63,7 @@ void * firstList(List * list)
 
 void * nextList(List * list) 
 {
-    Node* siguiente = list->current->next;
+    Node* siguiente = list->next;
 
     list->current = siguiente;
     

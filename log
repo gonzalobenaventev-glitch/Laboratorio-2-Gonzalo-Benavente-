@@ -1285,3 +1285,13 @@ e9e32c9
 Sat Mar 28 07:20:28 PM UTC 2026: 
  tests:  0|0
 619dcce
+Sat Mar 28 07:20:53 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:66:27: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   66 |     Node* siguiente = list->next;
+      |                           ^~
+5e7070c
