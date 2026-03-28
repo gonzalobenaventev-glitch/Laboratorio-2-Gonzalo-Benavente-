@@ -63,9 +63,9 @@ void * firstList(List * list)
 
 void * nextList(List * list) 
 {
-    Node* siguiente = list->next;
+    Node* siguiente = list->current;
 
-    list->current = siguiente;
+    list->current = siguiente->next;
     
     if (list->current != NULL)
     {
