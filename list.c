@@ -82,9 +82,17 @@ void * lastList(List * list)
 
     list->current = ultimo;
 
-    //dato = list->current->data;
+    if (list->current != NULL)
+    {
+        void* dato = list->current->data;
 
-    return list->current;
+        return dato;
+    }
+
+    else
+    {
+        return NULL;
+    }
 }
 
 void * prevList(List * list) 
