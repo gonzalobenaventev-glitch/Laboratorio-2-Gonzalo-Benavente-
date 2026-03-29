@@ -1505,3 +1505,14 @@ Sun Mar 29 01:44:17 PM UTC 2026:
  1 file changed, 4 insertions(+), 4 deletions(-)
  tests:  0|0
 8c4c43e
+Sun Mar 29 01:51:40 PM UTC 2026: 
+ list.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:150:19: error: unused variable ‘nuevo’ [-Werror=unused-variable]
+  150 |             Node* nuevo = createNode(data);
+      |                   ^~~~~
+cc1: all warnings being treated as errors
+d0ddc24
