@@ -155,7 +155,7 @@ void pushFront(List * list, void * data)
 
         pushCurrent(list, nuevo);
     }
-    if (list == NULL)
+    else
     {
         Node* nuevo = createNode(data);
 
