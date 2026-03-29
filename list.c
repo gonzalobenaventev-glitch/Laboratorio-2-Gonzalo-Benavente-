@@ -197,14 +197,6 @@ void pushCurrent(List * list, void * data)
         siguiente->prev = nuevo;
     }
 
-    else
-    {
-        Node* nuevo = createNode(data);
-
-        list->head = nuevo;
-        list->tail = nuevo;
-        list->current = nuevo;
-    }
 }
 
 void * popFront(List * list) 
