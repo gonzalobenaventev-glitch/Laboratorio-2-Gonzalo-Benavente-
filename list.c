@@ -152,8 +152,6 @@ void pushFront(List * list, void * data)
         list->head = nuevo;
 
         list->current = list->head;
-
-        pushCurrent(list, nuevo);
     }
     else
     {
@@ -164,8 +162,6 @@ void pushFront(List * list, void * data)
         list->tail = nuevo;
 
         list->current = list->head;
-
-        pushCurrent(list, nuevo);
     }
     
 }
