@@ -149,7 +149,7 @@ void pushFront(List * list, void * data)
         {
             Node* nuevo = createNode(data);
 
-            pushCurrent(list, data);
+            pushCurrent(list, nuevo);
         }
     }
     
