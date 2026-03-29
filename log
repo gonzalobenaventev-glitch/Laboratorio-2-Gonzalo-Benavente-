@@ -1432,3 +1432,8 @@ list.c:144:5: error: ‘nuevo’ undeclared (first use in this function)
       |     ^~~~~
 list.c:144:5: note: each undeclared identifier is reported only once for each function it appears in
 88e421c
+Sun Mar 29 01:32:35 PM UTC 2026: 
+ list.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+ tests:  0|0
+beed559
