@@ -1454,3 +1454,20 @@ Sun Mar 29 01:36:42 PM UTC 2026:
  tests:  10|2
 total_score: 40/60
 99edabd
+Sun Mar 29 01:41:10 PM UTC 2026: 
+ list.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:166:31: error: ‘List’ {aka ‘struct List’} has no member named ‘nuevo’
+  166 |         Node* siguiente = list->nuevo->next;
+      |                               ^~
+list.c:166:15: error: unused variable ‘siguiente’ [-Werror=unused-variable]
+  166 |         Node* siguiente = list->nuevo->next;
+      |               ^~~~~~~~~
+list.c:165:15: error: unused variable ‘nuevo’ [-Werror=unused-variable]
+  165 |         Node* nuevo = list->current->next;
+      |               ^~~~~
+cc1: all warnings being treated as errors
+46eaf1c
