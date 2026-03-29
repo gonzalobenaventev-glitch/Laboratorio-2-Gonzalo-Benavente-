@@ -1421,3 +1421,14 @@ list.c:144:11: error: variable ‘nuevo’ set but not used [-Werror=unused-but-
       |           ^~~~~
 cc1: all warnings being treated as errors
 a1295cc
+Sun Mar 29 01:32:11 PM UTC 2026: 
+ list.c | 2 --
+ 1 file changed, 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:144:5: error: ‘nuevo’ undeclared (first use in this function)
+  144 |     nuevo = createNode(data);
+      |     ^~~~~
+list.c:144:5: note: each undeclared identifier is reported only once for each function it appears in
+88e421c
