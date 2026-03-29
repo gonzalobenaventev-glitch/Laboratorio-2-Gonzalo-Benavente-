@@ -188,13 +188,21 @@ void pushCurrent(List * list, void * data)
 
         Node* siguiente = list->current->next;
 
-        nuevo->prev = list->current;
+        if (siguiente != NULL)
+        {
+            nuevo->prev = list->current;
 
-        list->current->next = nuevo;
+            list->current->next = nuevo;
 
-        nuevo->next = siguiente;
+            nuevo->next = siguiente;
 
-        siguiente->prev = nuevo;
+            siguiente->prev = nuevo;
+        }
+
+        else
+        {
+            siguiente = nuevo;
+        }
     }
 }
 
