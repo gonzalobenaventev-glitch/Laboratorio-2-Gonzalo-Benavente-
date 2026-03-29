@@ -163,13 +163,13 @@ void pushCurrent(List * list, void * data)
     if (list->current != NULL)
     {
         Node* nuevo = list->current->next;
-        Node* siguiente = list->nuevo->next;
+        Node* siguiente = nuevo->next;
 
-        list->nuevo->prev = list->current;
+        nuevo->prev = list->current;
 
-        list->siguiente->prev = list->nuevo;
+        siguiente->prev = nuevo;
 
-        list->nuevo->data = data;
+        nuevo->data = data;
     }
 }
 
