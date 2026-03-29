@@ -204,6 +204,8 @@ void pushCurrent(List * list, void * data)
             nuevo->prev = list->current;
 
             list->current->next = nuevo;
+
+            list->tail = nuevo;
         }
     }
 }
